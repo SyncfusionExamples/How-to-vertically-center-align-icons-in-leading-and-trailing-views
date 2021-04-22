@@ -5,11 +5,16 @@
              x:Class="TextInputLayout_Sample.MainPage" >
 
     <StackLayout Margin="10,30,10,0" >
-        <inputLayout:SfTextInputLayout ContainerType="Outlined" Hint="Date"
+        
+        <inputLayout:SfTextInputLayout ContainerType="Outlined" Hint="Date" UnfocusedStrokeWidth="2"
                                        LeadingViewPosition="Inside" OutlineCornerRadius="20">
-
+            
+            <inputLayout:SfTextInputLayout.HintLabelStyle>
+                <inputLayout:LabelStyle FontSize="18"/>
+            </inputLayout:SfTextInputLayout.HintLabelStyle>
+           
             <inputLayout:SfTextInputLayout.LeadingView>
-                <Label VerticalTextAlignment="Center" Text="&#x1F5D3;"/>
+                <Label VerticalTextAlignment="Center" Text="&#x1F5D3;" FontSize="16"/>
             </inputLayout:SfTextInputLayout.LeadingView>
 
             <Entry />
