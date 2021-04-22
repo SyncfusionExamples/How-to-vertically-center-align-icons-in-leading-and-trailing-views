@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:inputLayout="clr-namespace:Syncfusion.XForms.TextInputLayout;assembly=Syncfusion.Core.XForms"
+             x:Class="TextInputLayout_Sample.MainPage" >
+
+    <StackLayout Margin="10,30,10,0" >
+        <inputLayout:SfTextInputLayout ContainerType="Outlined" Hint="Date"
+                                       LeadingViewPosition="Inside" OutlineCornerRadius="20">
+
+            <inputLayout:SfTextInputLayout.LeadingView>
+                <Label VerticalTextAlignment="Center" Text="&#x1F5D3;"/>
+            </inputLayout:SfTextInputLayout.LeadingView>
+
+            <Entry />
+
+        </inputLayout:SfTextInputLayout>
+    </StackLayout>
+
+</ContentPage>
